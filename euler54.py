@@ -94,6 +94,7 @@ def evaluate_hand(hand):
         return HandRank.ONE_PAIR.value, VALUES.index(hand_array[-2][0]), VALUES.index(hand_array[2][0]), \
                VALUES.index(hand_array[1][0]), VALUES.index(hand_array[0][0])
 
+    # High card
     return HandRank.HIGH_CARD.value, VALUES.index(hand_array[4][0]), VALUES.index(hand_array[3][0]), \
         VALUES.index(hand_array[2][0]), VALUES.index(hand_array[1][0]), VALUES.index(hand_array[0][0])
 
